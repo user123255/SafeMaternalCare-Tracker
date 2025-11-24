@@ -14,8 +14,6 @@ Our mission is to make maternal healthcare easier, safer, and accessible.
 Screenshot:  
 ![Symptom Checker](screenshots/symptom-checker.png)
 
----
-
 2️⃣ Clinic Finder
 - Finds nearby hospitals or maternal health centers using your location.
 - Provides clinic names and addresses for quick access.  
@@ -53,11 +51,8 @@ Symptom Checker
 1. Go to **Tools → SMS Reminder**.
 2. Enter the phone number and message.
 3. Click **Send SMS** to notify the recipient.
-
- Project structure 
+4. 
 <img width="490" height="318" alt="Screenshot 2025-11-24 165159" src="https://github.com/user-attachments/assets/168abb84-496b-4664-8228-39f0e3c7d199" />
-
-
 
 #Installation and setup 
 clone the repository
