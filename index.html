@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeMaternalCare Tracker</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1><i class="fas fa-baby-carriage"></i> SafeMaternalCare Tracker</h1>
+      <p>Your trusted companion for monitoring maternal health.</p>
+      <nav>
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#features"><i class="fas fa-star"></i> Features</a></li>
+          <li><a href="#tools"><i class="fas fa-tools"></i> Tools</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section fade-in">
+      <h2>Welcome</h2>
+      <p>SafeMaternalCare Tracker helps expectant mothers monitor their health and get quick access to essential tools and resources throughout pregnancy.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section fade-in">
+      <h2>Features</h2>
+      <div class="cards">
+        <div class="card"><i class="fas fa-notes-medical"></i> Symptom Checker</div>
+        <div class="card"><i class="fas fa-hospital"></i> Clinic Finder</div>
+        <div class="card"><i class="fas fa-pills"></i> Medication Checker</div>
+        <div class="card"><i class="fas fa-comment-dots"></i> SMS Reminder</div>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section fade-in">
+      <h2>Tools</h2>
+
+      <!-- Symptom Checker -->
+      <div class="tool">
+        <h3><i class="fas fa-stethoscope"></i> Symptom Checker</h3>
+        <form id="symptomForm">
+          <input type="text" id="symptomInput" placeholder="Enter symptoms, comma separated">
+          <button type="submit">Analyze</button>
+        </form>
+        <div id="symptomResults"></div>
+      </div>
+
+      <!-- Clinic Finder -->
+      <div class="tool">
+        <h3><i class="fas fa-map-marker-alt"></i> Find Nearby Clinics</h3>
+        <button id="findClinicsBtn">Find Clinics Near Me</button>
+        <ul id="clinicsList"></ul>
+      </div>
+
+      <!-- Medication Checker -->
+      <div class="tool">
+        <h3><i class="fas fa-capsules"></i> Medication Checker</h3>
+        <input type="text" id="medInput" placeholder="Medication name">
+        <button id="checkMedBtn">Check Medication</button>
+        <ul id="medResults"></ul>
+      </div>
+
+      <!-- SMS Reminder -->
+      <div class="tool">
+        <h3><i class="fas fa-comment-dots"></i> SMS Reminder</h3>
+        <button id="sendSMSBtn">Send SMS Reminder</button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+      <h2>Contact</h2>
+      <p>If you need help or have questions, reach out: <span class="chol">n.chol@alustudent.com or 0795623967 / +211980949075</span></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><i class="fas fa-heart"></i> Designed with love for expecting mothers | SafeMaternalCare Tracker</p>
+  </footer>
+
+  <!-- Google Maps API (move key to server for production) -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+

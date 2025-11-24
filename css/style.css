@@ -1,0 +1,280 @@
+/* ================================
+   SafeMaternalCare Tracker Styles
+   Modern, Responsive, and Attractive
+=================================== */
+
+/* ---------- General Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #eaecee;
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ---------- Dark Mode Support ---------- */
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #f0f7ff;
+}
+
+.dark-mode .card {
+    background-color: #162447;
+    color: #f0f7ff;
+}
+
+.dark-mode footer {
+    background-color: #162447;
+}
+
+/* ---------- Header ---------- */
+header {
+    background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffecd1;
+}
+
+/* ---------- Sections ---------- */
+.section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ---------- Feature Cards ---------- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #66a6ff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ---------- Existing Personal Information Class (kept intact) ---------- */
+.personal-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+.personal-info h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    padding: 10px;
+    background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ---------- Tools ---------- */
+.tool {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tool input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.tool button {
+    padding: 10px 20px;
+    background-color: #66a6ff;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.tool button:hover {
+    background-color: #89f7fe;
+}
+
+/* ---------- Lists ---------- */
+ul {
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #66a6ff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+/* ---------- Animations ---------- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tool input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tool button {
+        width: 100%;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #personalInfo {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+/* -----------------------------
+   Symptom Checker Results Styling
+   ----------------------------- */
+#symptomResults {
+    background-color: #f0f7ff; /* soft pastel background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: 'Nunito', sans-serif;
+}
+
+#symptomResults ul {
+    padding-left: 20px;
+}
+
+#symptomResults li {
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+#symptomResults li p {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+}
+
+/* Optional: color-coded probability for severity */
+#symptomResults li.low { color: #27ae60; font-weight: 600; }      /* low probability */
+#symptomResults li.medium { color: #f39c12; font-weight: 600; }   /* medium probability */
+#symptomResults li.high { color: #c0392b; font-weight: 600; }     /* high probability */
+/* End of Symptom Checker Results Styling */
+/* -----------------------------
+   End of SafeMaternalCare Tracker Styles
+   ----------------------------- */
+   
+
